@@ -32,11 +32,21 @@
         <a href="#faq">คำถามที่พบบ่อย</a>
       </nav>
 
-      <a class="btn btn--primary nav__cta" href="#booking">จองคิว</a>
-
-      <button class="nav__toggle" id="navToggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="mobileMenu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__end">
+        <div class="nav__actions">
+          <a class="btn btn--ghost nav__phone" href="tel:0921234567" aria-label="โทรหาเรา 092-123-4567">
+            <svg class="nav__phone-ic" viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>092-123-4567</span>
+          </a>
+          <a class="btn btn--primary nav__cta" href="#booking">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            จองคิวเลย
+          </a>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
 
     <div class="mobile-menu" id="mobileMenu" hidden>
@@ -45,7 +55,8 @@
       <a href="#reviews">รีวิว</a>
       <a href="#about">เกี่ยวกับเรา</a>
       <a href="#faq">คำถามที่พบบ่อย</a>
-      <a class="btn btn--primary" href="#booking">จองคิว</a>
+      <a class="btn btn--primary" href="#booking">จองคิวเลย</a>
+      <a class="btn btn--ghost" href="tel:0921234567">โทร 092-123-4567</a>
     </div>
   </header>
 
@@ -53,50 +64,62 @@
 
     <!-- HERO -->
     <section class="hero">
+      <div class="hero__decor" aria-hidden="true">
+        <span class="hero__blob hero__blob--1"></span>
+        <span class="hero__blob hero__blob--2"></span>
+        <span class="hero__dots"></span>
+        <svg class="hero__sparkle hero__sparkle--a" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2c1 5.4 3.6 8 9 9-5.4 1-8 3.6-9 9-1-5.4-3.6-8-9-9 5.4-1 8-3.6 9-9Z"/></svg>
+        <svg class="hero__sparkle hero__sparkle--b" viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2c1 5.4 3.6 8 9 9-5.4 1-8 3.6-9 9-1-5.4-3.6-8-9-9 5.4-1 8-3.6 9-9Z"/></svg>
+      </div>
       <div class="container hero__inner">
-        <div class="hero__copy reveal">
-          <span class="eyebrow">ดูแลคุณแม่หลังคลอด · เชียงใหม่</span>
-          <h1>อุ่นใจทุกหยดน้ำนม<br />ด้วยการดูแลที่<span class="hl">อ่อนโยน</span></h1>
-          <p class="lead">บริการนวดเปิดท่อน้ำนม กระตุ้นน้ำนม และดูแลคุณแม่หลังคลอด โดยผู้เชี่ยวชาญที่เข้าใจหัวใจคุณแม่ ปลอดภัย สะอาด บริการทั้งหน้าร้านและถึงบ้าน</p>
+        <div class="hero__copy">
+          <span class="eyebrow eyebrow--icon">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 21s-6.7-4.35-9.33-8.2C1.1 10.42 1.4 7.4 3.6 5.85c1.9-1.35 4.4-.9 5.9.85L12 9.4l2.5-2.7c1.5-1.75 4-2.2 5.9-.85 2.2 1.55 2.5 4.57.93 6.95C18.7 16.65 12 21 12 21z"/></svg>
+            ดูแลคุณแม่หลังคลอด · เชียงใหม่
+          </span>
+          <h1 class="hero__title">น้ำนมไหลดีขึ้น<br /><span class="hl">อุ่นใจขึ้นในทุกวัน<span class="hero__heart" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M12 21s-6.7-4.35-9.33-8.2C1.1 10.42 1.4 7.4 3.6 5.85c1.9-1.35 4.4-.9 5.9.85L12 9.4l2.5-2.7c1.5-1.75 4-2.2 5.9-.85 2.2 1.55 2.5 4.57.93 6.95C18.7 16.65 12 21 12 21z"/></svg></span></span></h1>
+          <p class="lead">ดูแลปัญหาท่อน้ำนมตัน น้ำนมน้อย และเต้านมคัดตึง ด้วยการดูแลที่อ่อนโยน โดยผู้เชี่ยวชาญด้านการให้นมแม่ บริการทั้งหน้าร้านและถึงบ้าน</p>
           <div class="hero__actions">
-            <a class="btn btn--primary btn--lg" href="#booking">จองคิวเลย</a>
-            <a class="btn btn--ghost btn--lg" href="#services">ดูบริการทั้งหมด</a>
+            <a class="btn btn--primary btn--lg" href="#booking">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              จองคิวรับการดูแล
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#faq">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              ปรึกษาเบื้องต้นฟรี
+            </a>
           </div>
-          <div class="hero__trust">
-            <div class="stars" aria-label="คะแนนรีวิว 4.9 จาก 5">
-              <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.86-4.25 4.14 1 5.87L10 15.9l-5.25 2.77 1-5.87L1.5 7.66l5.9-.86z"/></svg>
-              <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.86-4.25 4.14 1 5.87L10 15.9l-5.25 2.77 1-5.87L1.5 7.66l5.9-.86z"/></svg>
-              <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.86-4.25 4.14 1 5.87L10 15.9l-5.25 2.77 1-5.87L1.5 7.66l5.9-.86z"/></svg>
-              <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.86-4.25 4.14 1 5.87L10 15.9l-5.25 2.77 1-5.87L1.5 7.66l5.9-.86z"/></svg>
-              <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.86-4.25 4.14 1 5.87L10 15.9l-5.25 2.77 1-5.87L1.5 7.66l5.9-.86z"/></svg>
+          <div class="hero__rating">
+            <div class="hero__rating-score">
+              <svg class="hero__rating-star" viewBox="0 0 20 20" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.86-4.25 4.14 1 5.87L10 15.9l-5.25 2.77 1-5.87L1.5 7.66l5.9-.86z"/></svg>
+              <span><b>4.9</b><i>/5</i></span>
             </div>
-            <p><strong>4.9/5</strong> · จากคุณแม่กว่า <strong>800+</strong> ท่านที่ไว้ใจ</p>
-          </div>
-        </div>
-
-        <div class="hero__visual reveal">
-          <div class="hero__card">
-            <div class="hero__photo">
-              <img class="hero__img" src="assets/hero-mom.jpg" alt="คุณแม่อุ้มลูกน้อยแรกเกิดด้วยความอบอุ่น" width="1024" height="1536" loading="eager" fetchpriority="high" />
-            </div>
-            <div class="hero__badge">
-              <span class="hero__badge-ic" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-              </span>
-              <div>
-                <strong>ผู้เชี่ยวชาญมีใบรับรอง</strong>
-                <small>ประสบการณ์กว่า 8 ปี</small>
-              </div>
+            <p class="hero__rating-text">จากคุณแม่กว่า <strong>800+</strong> ท่าน<br />ที่ไว้วางใจเรา</p>
+            <div class="hero__avatars" aria-hidden="true">
+              <img class="hero__avatar" src="assets/avatars/av1.jpg" alt="" width="160" height="160" loading="lazy" />
+              <img class="hero__avatar" src="assets/avatars/av2.jpg" alt="" width="160" height="160" loading="lazy" />
+              <img class="hero__avatar" src="assets/avatars/av3.jpg" alt="" width="160" height="160" loading="lazy" />
+              <img class="hero__avatar" src="assets/avatars/av4.jpg" alt="" width="160" height="160" loading="lazy" />
+              <span class="hero__avatar hero__avatar--more">800+</span>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="hero__visual">
+        <div class="hero__photo">
+          <img class="hero__img" src="assets/hero-mom.jpg" alt="คุณแม่อุ้มลูกน้อยแรกเกิดด้วยความอบอุ่น" width="1024" height="1536" loading="eager" fetchpriority="high" />
+        </div>
+      </div>
+
+      <div class="hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 64C160 24 320 8 480 24C640 40 720 96 880 100C1040 104 1200 56 1360 40C1413 35 1440 40 1440 40V120H0V64Z" fill="#FDF3EA"/></svg>
+      </div>
     </section>
-    <div class="zig-edge" aria-hidden="true"></div>
 
-
-    <!-- STATS (Care that adds up) -->
-    <section class="section stats2" aria-label="การดูแลที่เห็นผล">
+    <!-- STATS — organic curved section -->
+    <section class="truststats" aria-label="ผลลัพธ์การดูแลที่คุณแม่ไว้ใจ">
+      <!-- Statistics -->
       <div class="container stats2__inner">
         <div class="stats2__head reveal">
           <h2>ตัวเลขที่<br />คุณแม่ไว้ใจ</h2>
@@ -124,53 +147,113 @@
           </div>
         </div>
       </div>
+
+      <!-- organic bottom wave — same curve language as hero top -->
+      <div class="truststats__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 64C160 24 320 8 480 24C640 40 720 96 880 100C1040 104 1200 56 1360 40C1413 35 1440 40 1440 40V120H0V64Z" fill="#FDF3EA"/></svg>
+      </div>
     </section>
-    <div class="zig-edge" aria-hidden="true"></div>
 
     <!-- SERVICES -->
     <section class="section" id="services">
       <div class="container">
         <div class="section__head reveal">
-          <span class="eyebrow eyebrow--center">บริการของเรา</span>
-          <h2>ดูแลครบทุกความต้องการ<br />ของคุณแม่หลังคลอด</h2>
-          <p class="section__sub">เราออกแบบทุกบริการให้อ่อนโยน ปลอดภัย และตอบโจทย์ปัญหาน้ำนมของคุณแม่แต่ละท่าน</p>
+          <span class="eyebrow eyebrow--icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>บริการของเรา</span>
+          <h2>ดูแลครบทุกความต้องการ<br /><span class="hl">ของคุณแม่หลังคลอด</span></h2>
+          <p class="section__sub">อ่อนโยน · ปลอดภัย · ใส่ใจในทุกขั้นตอน</p>
+        </div>
+
+        <div class="svcgroup reveal">
+          <span class="svcgroup__ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          <div>
+            <h3 class="svcgroup__title">ดูแลน้ำนม &amp; เต้านม</h3>
+            <p class="svcgroup__sub">ดูแลปัญหาน้ำนมและเต้านมอย่างอ่อนโยน เพื่อให้น้ำนมไหลดีและลูกน้อยได้รับน้ำนมแม่อย่างเต็มที่</p>
+          </div>
         </div>
 
         <div class="cards">
           <article class="card reveal">
-            <span class="card__ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></span>
-            <h3>นวดเปิดท่อน้ำนม</h3>
-            <p>แก้ปัญหาท่อน้ำนมอุดตัน เต้านมคัดตึง ด้วยเทคนิคนวดอ่อนโยน ช่วยให้น้ำนมไหลคล่อง</p>
+            <div class="card__media"><img class="card__img" src="assets/gallery-lounge.jpg" alt="บรรยากาศมุมพักผ่อนภายในร้าน ตกแต่งอบอุ่นด้วยโทนสีธรรมชาติ" width="1672" height="941" loading="lazy" decoding="async" /></div>
+            <div class="card__body">
+              <div class="card__head"><span class="card__no">01</span><h3>นวดเปิดท่อน้ำนม</h3></div>
+              <p>ดูแลท่อน้ำนมตัน นมไหลไม่ออก ลดอาการเจ็บ ปวด ตึง</p>
+              <div class="card__foot">
+                <span class="card__time"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60-90 นาที</span>
+                <a class="card__go" href="#booking" aria-label="ดูรายละเอียด นวดเปิดท่อน้ำนม"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
           </article>
 
           <article class="card reveal">
-            <span class="card__ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></span>
-            <h3>กระตุ้นน้ำนม</h3>
-            <p>สำหรับคุณแม่ที่น้ำนมน้อย ช่วยกระตุ้นการสร้างน้ำนมให้เพียงพอต่อความต้องการของลูกน้อย</p>
+            <div class="card__media"><img class="card__img" src="assets/gallery-nursing.jpg" alt="บรรยากาศมุมให้นมภายในร้าน พร้อมเก้าอี้และหมอนรองให้นม" width="1536" height="1024" loading="lazy" decoding="async" /></div>
+            <div class="card__body">
+              <div class="card__head"><span class="card__no">02</span><h3>กระตุ้นน้ำนม</h3></div>
+              <p>สำหรับคุณแม่ที่น้ำนมน้อย เสริมให้น้ำนมมากขึ้นอย่างเป็นธรรมชาติ</p>
+              <div class="card__foot">
+                <span class="card__time"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60-90 นาที</span>
+                <a class="card__go" href="#booking" aria-label="ดูรายละเอียด กระตุ้นน้ำนม"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
           </article>
 
           <article class="card reveal">
-            <span class="card__ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>
-            <h3>สลายก้อนไต / ประคบเต้านม</h3>
-            <p>บรรเทาอาการเต้านมเป็นก้อน อักเสบ ด้วยการประคบร้อน-เย็นและนวดสลายอย่างถูกวิธี</p>
+            <div class="card__media"><img class="card__img" src="assets/gallery-room.jpg" alt="บรรยากาศห้องบริการภายในร้าน สะอาดและผ่อนคลาย" width="1672" height="941" loading="lazy" decoding="async" /></div>
+            <div class="card__body">
+              <div class="card__head"><span class="card__no">03</span><h3>สลายก้อน / ประคบเต้านม</h3></div>
+              <p>สลายก้อนแข็ง ลดอาการคัดตึง บรรเทาอาการเจ็บ และป้องกันการอุดตัน</p>
+              <div class="card__foot">
+                <span class="card__time"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45-60 นาที</span>
+                <a class="card__go" href="#booking" aria-label="ดูรายละเอียด สลายก้อน ประคบเต้านม"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="svcdivider reveal" aria-hidden="true"><span class="svcdivider__line"></span><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg><span class="svcdivider__line"></span></div>
+
+        <div class="svcgroup reveal">
+          <span class="svcgroup__ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+          <div>
+            <h3 class="svcgroup__title">ดูแลคุณแม่หลังคลอด</h3>
+            <p class="svcgroup__sub">ฟื้นฟูร่างกายและจิตใจ ให้คุณแม่กลับมาแข็งแรงและมีความสุข</p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__media"><img class="card__img" src="assets/gallery-room.jpg" alt="ผู้เชี่ยวชาญนวดตัวคุณแม่หลังคลอดเพื่อผ่อนคลายกล้ามเนื้อ" width="1672" height="941" loading="lazy" decoding="async" /></div>
+            <div class="card__body">
+              <div class="card__head"><span class="card__no">04</span><h3>นวดตัวคุณแม่หลังคลอด</h3></div>
+              <p>ผ่อนคลายกล้ามเนื้อ ลดอาการปวดเมื่อย ช่วยให้ร่างกายฟื้นตัวเร็วขึ้น</p>
+              <div class="card__foot">
+                <span class="card__time"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60-90 นาที</span>
+                <a class="card__go" href="#booking" aria-label="ดูรายละเอียด นวดตัวคุณแม่หลังคลอด"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
           </article>
 
           <article class="card reveal">
-            <span class="card__ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span>
-            <h3>นวดตัวคุณแม่หลังคลอด</h3>
-            <p>ผ่อนคลายกล้ามเนื้อ ลดอาการปวดเมื่อย ฟื้นฟูร่างกายคุณแม่หลังคลอดให้สดชื่น</p>
+            <div class="card__media"><img class="card__img" src="assets/gallery-tools.jpg" alt="อุปกรณ์ทับหม้อเกลือและลูกประคบสมุนไพรสำหรับดูแลคุณแม่หลังคลอด" width="1536" height="1024" loading="lazy" decoding="async" /></div>
+            <div class="card__body">
+              <div class="card__head"><span class="card__no">05</span><h3>ทับหม้อเกลือ / อยู่ไฟหลังคลอด</h3></div>
+              <p>ช่วยขับของเสีย ฟื้นฟูร่างกาย อบอุ่นผ่อนคลาย กระตุ้นการไหลเวียน</p>
+              <div class="card__foot">
+                <span class="card__time"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>60-90 นาที</span>
+                <a class="card__go" href="#booking" aria-label="ดูรายละเอียด ทับหม้อเกลือ อยู่ไฟหลังคลอด"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
           </article>
 
           <article class="card reveal">
-            <span class="card__ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
-            <h3>ทับหม้อเกลือ / อยู่ไฟ</h3>
-            <p>ศาสตร์ดูแลหลังคลอดแบบไทย ช่วยให้มดลูกเข้าอู่เร็ว ขับน้ำคาวปลา และผ่อนคลาย</p>
-          </article>
-
-          <article class="card reveal">
-            <span class="card__ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg></span>
-            <h3>ปรึกษาการเลี้ยงลูกด้วยนมแม่</h3>
-            <p>ให้คำแนะนำท่าให้นม การเก็บน้ำนม และแก้ปัญหาการเลี้ยงลูกด้วยนมแม่แบบตัวต่อตัว</p>
+            <div class="card__media"><img class="card__img" src="assets/gallery-home.jpg" alt="ผู้เชี่ยวชาญให้คำปรึกษาการเลี้ยงลูกด้วยนมแม่ถึงบ้าน" width="1536" height="1024" loading="lazy" decoding="async" /></div>
+            <div class="card__body">
+              <div class="card__head"><span class="card__no">06</span><h3>ปรึกษาการเลี้ยงลูกด้วยนมแม่</h3></div>
+              <p>ให้คำแนะนำโดยผู้เชี่ยวชาญ ตอบทุกข้อสงสัยอย่างใกล้ชิด</p>
+              <div class="card__foot">
+                <span class="card__time"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>45-60 นาที</span>
+                <a class="card__go" href="#booking" aria-label="ดูรายละเอียด ปรึกษาการเลี้ยงลูกด้วยนมแม่"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -179,7 +262,7 @@
     <!-- WHY -->
     <section class="section section--peach" id="why">
       <div class="container why__inner">
-        <div class="why__copy reveal">
+        <div class="why__copy reveal reveal--left">
           <span class="eyebrow">ทำไมคุณแม่ถึงเลือกเรา</span>
           <h2>ดูแลคุณเหมือนคนในครอบครัว</h2>
           <p class="section__sub">เราเข้าใจว่าช่วงหลังคลอดคือช่วงเวลาที่บอบบางที่สุด ทุกสัมผัสของเราจึงมาพร้อมความใส่ใจและความปลอดภัย</p>
@@ -204,7 +287,7 @@
           </ul>
         </div>
 
-        <div class="why__visual reveal">
+        <div class="why__visual reveal reveal--right">
           <div class="why__blob"></div>
           <figure class="why__figure">
             <img class="why__img" src="assets/family-care.jpg" alt="คุณแม่ยกลูกน้อยขึ้นเล่นด้วยรอยยิ้มอย่างมีความสุข" width="1333" height="2000" loading="lazy" />
@@ -263,13 +346,13 @@
     <!-- REVIEWS -->
     <section class="section section--cream" id="reviews">
       <div class="container">
-        <div class="section__head reveal">
+        <div class="section__head">
           <span class="eyebrow eyebrow--center">เสียงจากคุณแม่</span>
           <h2>รีวิวจริงจากคุณแม่ที่ไว้ใจเรา</h2>
           <p class="section__sub">รวมรีวิวจากเพจและคุณแม่ที่มาใช้บริการจริง</p>
         </div>
 
-        <div class="reviews-carousel reveal">
+        <div class="reviews-carousel">
           <button type="button" class="rev-nav rev-nav--prev" data-rev-prev aria-label="รีวิวก่อนหน้า">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
@@ -334,7 +417,7 @@
     <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container about__inner">
-        <div class="about__visual reveal">
+        <div class="about__visual reveal reveal--left">
           <div class="about__grid">
             <figure class="about__cell about__cell--a"><img class="about__img" src="assets/about-1.jpg" alt="คุณแม่โอบกอดลูกน้อยแรกเกิดอย่างอบอุ่น" loading="lazy" /></figure>
             <figure class="about__cell about__cell--b"><img class="about__img" src="assets/about-2.jpg" alt="ลูกน้อยยิ้มสดใสขณะนอนเล่น" loading="lazy" /></figure>
@@ -342,7 +425,7 @@
             <figure class="about__cell about__cell--d"><img class="about__img" src="assets/about-4.jpg" alt="มือน้อยของลูกกำนิ้วคุณแม่ไว้แน่น" loading="lazy" /></figure>
           </div>
         </div>
-        <div class="about__copy reveal">
+        <div class="about__copy reveal reveal--right">
           <span class="eyebrow">เกี่ยวกับ Lactation Wellness</span>
           <h2>เกิดจากหัวใจของคนเป็นแม่</h2>
           <p>“Lactation Wellness” เริ่มต้นจากความเข้าใจว่าช่วงหลังคลอดคือช่วงที่คุณแม่ต้องการการดูแลมากที่สุด ทั้งร่างกายและจิตใจ เราจึงตั้งใจสร้างพื้นที่ที่อบอุ่นและปลอดภัย เพื่อให้คุณแม่ทุกคนได้พักและฟื้นฟูอย่างแท้จริง</p>
@@ -378,7 +461,7 @@
     <!-- FAQ -->
     <section class="section" id="faq">
       <div class="container faq__inner">
-        <div class="faq__aside reveal">
+        <div class="faq__aside reveal reveal--left">
           <div class="section__head section__head--left">
             <span class="eyebrow">คำถามที่พบบ่อย</span>
             <h2>เรื่องที่คุณแม่มักสงสัย</h2>
@@ -432,10 +515,10 @@
     </section>
 
     <!-- BOOKING / CONTACT -->
-    <section class="section section--dark" id="booking">
+    <section class="section section--peach" id="booking">
       <div class="container booking__inner">
         <div class="booking__info reveal">
-          <span class="eyebrow eyebrow--light">จองคิว &amp; ติดต่อเรา</span>
+          <span class="eyebrow">จองคิว &amp; ติดต่อเรา</span>
           <h2>พร้อมดูแลคุณแม่แล้ววันนี้</h2>
           <p>ทิ้งข้อมูลไว้ให้เรา แล้วทีมงานจะติดต่อกลับเพื่อยืนยันคิวและให้คำแนะนำเบื้องต้น หรือทักหาเราได้โดยตรงตามช่องทางด้านล่าง</p>
 
@@ -449,7 +532,7 @@
               <div><small>Facebook</small><a href="https://www.facebook.com/CNX4289/" target="_blank" rel="noopener noreferrer"><strong>facebook.com/CNX4289</strong></a></div>
             </li>
             <li>
-              <span class="contact__ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></span>
+              <span class="contact__ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.55 7.39 8.35 8.03.32.07.77.21.88.49.1.25.06.63.03.88l-.14.85c-.04.25-.2.99.87.54 1.07-.45 5.75-3.39 7.85-5.8C21.28 13.5 22 11.9 22 10.13 22 5.64 17.52 2 12 2zM8.29 12.6h-2c-.29 0-.53-.24-.53-.53V8.09c0-.29.24-.53.53-.53s.53.24.53.53v3.45h1.47c.29 0 .53.24.53.53s-.24.53-.53.53zm2.07-.53c0 .29-.24.53-.53.53s-.53-.24-.53-.53V8.09c0-.29.24-.53.53-.53s.53.24.53.53v3.98zm4.71 0c0 .23-.15.43-.36.5-.06.02-.11.03-.17.03-.17 0-.32-.08-.42-.21l-2.04-2.78v2.46c0 .29-.24.53-.53.53s-.53-.24-.53-.53V8.09c0-.23.15-.43.36-.5.06-.02.11-.02.17-.02.16 0 .32.08.42.21l2.05 2.78V8.09c0-.29.24-.53.53-.53s.53.24.53.53v3.98zm3.17-2.52c.29 0 .53.24.53.53s-.24.53-.53.53h-1.47v.93h1.47c.29 0 .53.24.53.53s-.24.53-.53.53h-2c-.29 0-.53-.24-.53-.53V8.09c0-.29.24-.53.53-.53h2c.29 0 .53.24.53.53s-.24.53-.53.53h-1.47v.93h1.47z"/></svg></span>
               <div><small>LINE Official</small><strong>@imaun.cnx</strong></div>
             </li>
             <li>
@@ -518,6 +601,22 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- FLOATING CONTACT -->
+  <div class="fab" aria-label="ช่องทางติดต่อด่วน">
+    <a class="fab__btn fab__btn--call" href="tel:0921234567" aria-label="โทรหาเรา 092-123-4567">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span class="fab__tip">โทรหาเรา</span>
+    </a>
+    <a class="fab__btn fab__btn--fb" href="https://www.facebook.com/CNX4289/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.9h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>
+      <span class="fab__tip">Facebook</span>
+    </a>
+    <a class="fab__btn fab__btn--line" href="https://line.me/R/ti/p/@imaun.cnx" target="_blank" rel="noopener noreferrer" aria-label="LINE @imaun.cnx">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.55 7.39 8.35 8.03.32.07.77.21.88.49.1.25.06.63.03.88l-.14.85c-.04.25-.2.99.87.54 1.07-.45 5.75-3.39 7.85-5.8C21.28 13.5 22 11.9 22 10.13 22 5.64 17.52 2 12 2zM8.29 12.6h-2c-.29 0-.53-.24-.53-.53V8.09c0-.29.24-.53.53-.53s.53.24.53.53v3.45h1.47c.29 0 .53.24.53.53s-.24.53-.53.53zm2.07-.53c0 .29-.24.53-.53.53s-.53-.24-.53-.53V8.09c0-.29.24-.53.53-.53s.53.24.53.53v3.98zm4.71 0c0 .23-.15.43-.36.5-.06.02-.11.03-.17.03-.17 0-.32-.08-.42-.21l-2.04-2.78v2.46c0 .29-.24.53-.53.53s-.53-.24-.53-.53V8.09c0-.23.15-.43.36-.5.06-.02.11-.02.17-.02.16 0 .32.08.42.21l2.05 2.78V8.09c0-.29.24-.53.53-.53s.53.24.53.53v3.98zm3.17-2.52c.29 0 .53.24.53.53s-.24.53-.53.53h-1.47v.93h1.47c.29 0 .53.24.53.53s-.24.53-.53.53h-2c-.29 0-.53-.24-.53-.53V8.09c0-.29.24-.53.53-.53h2c.29 0 .53.24.53.53s-.24.53-.53.53h-1.47v.93h1.47z"/></svg>
+      <span class="fab__tip">LINE</span>
+    </a>
+  </div>
+
+  <script src="script.js?v=7"></script>
 </body>
 </html>
